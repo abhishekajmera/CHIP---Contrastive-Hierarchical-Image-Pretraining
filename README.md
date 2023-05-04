@@ -15,3 +15,5 @@
 ## The file 'PCA.py' is used to reduce dimensions for the embeddings in the first phase to make clustering faster.
 ## The file 'Phase 3 - ResNet.ipynb' is the script for Phase 3 of our model for the unseen classes.
 ## The file 'Scaled.ipynb' is used to scale and transform the unseen classes in a format that is similar in the feature space to the seen classes embeddings
+## The file 'Phase2_ResNet_OneShot.py' is the main script for running Phase 2 of the model conducting one shot training for the seen training classes.
+## The file 'Phase0_CheckCLusters.py' is the script for checking for possible clusters initially on all images in the dataset

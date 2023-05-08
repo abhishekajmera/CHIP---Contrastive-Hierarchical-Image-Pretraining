@@ -1,4 +1,7 @@
-# CHIP
+# CHIP - Contrastive Hierarchical Image Pretraining
+
+Few-shot object classification is the task of classifying objects in an image with limited number of examples as supervision. We propose a one-shot/few-shot classification model that can classify an object of any unseen class into a relatively general category in an hierarchically based classification. Our model uses a three-level hierarchical contrastive loss based ResNet152 classifier for classifying an object based on its features extracted from Image embedding, not used during the training phase. For our experimentation, we have used a subset of the ImageNet (ILSVRC-12) dataset that contains only the animal classes for training our model and created our own dataset of unseen classes for evaluating our trained model. Our model provides satisfactory results in classifying the unknown objects into a generic category which has been later discussed in greater detail.
+
 #### The root directory consists of 24 items. Each of these are either a script to run each phase or are the model's weights generated at the end of each phase.
 #### The files '00_mean_embeddings_*.pth' are the mean embeddings generated using a regular pretrained ResNet-152 model to be used for the clustering in Phase-1 of the code.
 #### The files '10_allmean_level*_*x2048_resnet_Kmeans_k_*.pth' are the weights for phase 2 by clustering the 366 animal classes in ImageNet to the 366, 88 or 8 clusters for Levels 0, 1 and 2.
